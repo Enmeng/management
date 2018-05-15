@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="scau.aotu.business.dao.TaskDao">
+    <cache/>
+
+    <resultMap id="taskMap" type="Task">
+        <result property="taskTitle" column="task_title"/>
+        <result property="taskContent" column="task_content"/>
+        <result property="taskStatus" column="task_status"/>
+        <result property="createTime" column="create_time"/>
+
+    </resultMap>
+
+    <insert id="add" parameterType="SQLAdapter">
+        ${sql}
+    </insert>
+
+    <update id="update" parameterType="SQLAdapter">
+        ${sql}
+    </update>
+
+    <delete id="delete" parameterType="SQLAdapter">
+        ${sql}
+    </delete>
+
+    <select id="count" parameterType="SQLAdapter" resultType="Long">
+        ${sql}
+    </select>
+
+    <!--这里的resultType需要修改为实际的entity-->
+    <select id="get" parameterType="SQLAdapter" resultMap="taskMap">
+        ${sql}
+    </select>
+
+    <!--这里的resultType需要修改为实际的entity-->
+    <select id="list" parameterType="SQLAdapter" resultMap="taskMap">
+        ${sql}
+    </select>
+</mapper>

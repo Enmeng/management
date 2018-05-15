@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>后台管理</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+    <script src="../vendors/validator/validator.js"></script>
+  </head>
+
+  <body class="login">
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+            <form>
+              <h1>登录</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="帐号" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="密码" required="" />
+              </div>
+              <div class="radio">
+                  <label>
+                  <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 教师
+                  </label>
+                  <label>
+                  <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> 学生
+                  </label>
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="projectInformationRelease.html">登录</a>
+                <a class="reset_pass" href="#">忘记密码？</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">新用户
+                  <a href="#signup" class="to_register">注册</a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><img src="images/logo.jpg" style="display: inline;">后台管理</h1>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form>
+              <h1>注册</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="帐号" required="required" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="邮箱" required=""/>
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="密码" required="" />
+              </div>
+              <div class="radio">
+                  <label>
+                  <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios"> 教师
+                  </label>
+                  <label>
+                  <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios"> 学生
+                  </label>
+              </div>
+              <div>
+                <a class="btn btn-default submit" href="projectInformationRelease.html">提交</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">已注册？
+                  <a href="#signin" class="to_register">登录</a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1>后台管理</h1>
+                  </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

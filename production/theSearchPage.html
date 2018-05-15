@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>后台管理</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Dropzone.js -->
+    <link href="../vendors/dropzone/dist/min/dropzone.min.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md footer_fixed">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><strong>后台管理</strong></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>平台管理系统</h3>
+                <ul class="nav side-menu">
+                   
+                   <li><a><i class="fa fa-desktop"></i>图书管理<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="applyForPurchaseBook.html">购买申请</a></li>
+                      <li><a href="purchaseApproval.html">购买申请审核</a></li>
+                      <li><a href="newlyIncrease.html">信息录入</a></li>
+                      <li><a href="theSearchPage.html">图书搜索</a></li>
+                      <li><a href="detailedList.html">图书明细查看</a></li>
+                      <li><a href="useCaseAnalysis.html">图书使用情况分析</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-table"></i> 项目管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="projectInformationRelease.html">信息发布</a></li>
+                      <li><a href="projectInformationChange.html">信息修改</a></li>
+                      <li><a href="projectMemberDeclaration.html">成员申报</a></li>
+                      <li><a href="projectMemberApproval.html">成员审批</a></li>
+                        <li><a>任务安排<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="taskArrangement.html">任务发布</a>
+                            </li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </li>
+
+                  <li><a><i class="fa fa-sitemap"></i> 用户管理 <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a>学生管理<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="login.html">登录注册</a>
+                            </li>
+                            <li><a href="studentChangePassword.html">修改密码</a>
+                            </li>
+                            <li><a href="studentInformation.html">修改个人信息</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a>教师管理<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="login.html">登录注册</a>
+                            </li>
+                            <li><a href="teacherChangePassword.html">修改密码</a>
+                            </li>
+                            <li><a href="teacherInformation.html">修改个人信息</a>
+                            </li>
+                          </ul>
+                        </li>
+                    </ul>
+                  </li> 
+                  
+                  
+               </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+                <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Lock">
+                <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>图书搜索</h3>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_content">
+
+                     <div class="col-md-12">
+                        <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                        <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">简单检索</a>
+                          </li>
+                          <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">全文检索</a>
+                          </li>
+                          
+                        </ul>
+                        <div id="myTabContent" class="tab-content">
+                          <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                            <div class="col-md-12">
+                              <select class="col-md-2" style="font-weight: 600;padding-bottom:0.6%">
+                                <option>题名</option>
+                                <option>责任者</option>
+                                <option>主题词</option>
+                                <option>索书号</option>
+                                <option>出版社</option>
+                              </select>
+                              <select class="col-md-2" style="font-weight: 600;padding-bottom:0.6%">
+                                <option>前方一致</option>
+                                <option>完成匹配</option>
+                                <option>任意匹配</option>
+                              </select>
+                              <input type="text" name="" class="col-md-6">
+                              <button>检索</button>
+                            </div>
+                             <div class="col-md-12">
+                                <p><strong style="color: #C8201B">热门搜索：</strong>
+                                   <span><a href="theSearchContent.html">css</a> </span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href=""> aotu cad</a></span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href="">白夜行</a></span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href="">汇编语言</a> </span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href="">java</a></span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href="">平凡的世界</a></span>
+                                   <span style="padding-left: 1%">|</span>
+                                   <span style="padding-left: 1%"><a href="">洛丽塔</a></span>
+                                </p>
+                             </div>
+                             <br>
+                             <br>
+                             <div class="col-md-12">
+                               <p style="color: #551A8B"><a href="#">查看本星期的最高借阅量的书籍</a></p>
+                             </div>
+                            </div>
+                          <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                                <div class="col-md-12">
+                              <select class="col-md-2" style="font-weight: 600;padding-bottom:0.6%">
+                                <option>任意词</option>
+                                <option>题名</option>
+                                <option>责任者</option>
+                                <option>主题词</option>
+                                <option>索书号</option>
+                                <option>出版社</option>
+                              </select>
+                              <input type="text" name="" class="col-md-8">
+                              <button>检索</button>
+                            </div>
+                            <div class="col-md-12">
+                              <p><label>每页显示记录数:</label> 
+                                <select>
+                                  <option>20</option>
+                                  <option>30</option>
+                                  <option>50</option>
+                                  <option>100</option>
+                                </select>
+                              </p>
+                            </div>
+                            <div class="col-md-12">
+                              <ol>
+                                <li>.空格区分多个并列条件。例：Oracle 数据库 sql ，只检索包含 "Oracle" 且 "数据库" 且 "sql" 的记录。</li>
+                                <li>完全匹配请前后加上双引号(")。例："oracle 数据库",将不匹配 "oracle数据库"</li>
+                                <li>可使用通配符 ? (一个任意字符)与 * (多个任意字符)进行检索。不得出现在检索项的开头。</li>
+                                </ol>
+                            </div>
+                          </div>
+               </div>
+           </div>
+       </div>
+                  
+
+                     <div class="col-md-9 col-sm-9 col-xs-12">
+                       <div class="col-md-4">
+                         <h4 style="color: #4F66CC">热门图书</h4>
+                         <ul style="list-style: none">
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                         </ul>
+                       </div>
+                       <div class="col-md-4">
+                         <h4 style="color: #4F66CC">热门检索词</h4>
+                         <ul style="list-style: none">
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                         </ul>
+                       </div>
+                       <div class="col-md-4">
+                         <h4 style="color: #4F66CC">热门借阅</h4>
+                         <ul style="list-style: none">
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                           <li><i class="fa fa-tag"></i><a href="#">麦田里的守望者</a> </li>
+                         </ul>
+                       </div>
+                     </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+           <footer></footer>
+        
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Dropzone.js -->
+    <script src="../vendors/dropzone/dist/min/dropzone.min.js"></script>
+        <!-- validator -->
+    <script src="../vendors/validator/validator.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+    <script src="../vendors/select2/dist/js/select2.full.min.js"></script>
+    <!-- <script type="text/javascript" src="js/newlyIncrease.js"></script> -->
+    <script type="text/javascript" src="../vendors/dropzone/dist/dropzone.js"></script>
+  </body>
+</html>
